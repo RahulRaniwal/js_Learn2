@@ -1,0 +1,9 @@
+Npm is standard package manager for Node.js
+Npm is a way to download and manage dependencies
+ for both frontend and backend application.
+
+ npm commands 
+
+ npm init
+ npm install
+ 
