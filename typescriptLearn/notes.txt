@@ -1,0 +1,14 @@
+Ts is build on top of js
+
+/****************** Benefits **************/
+
+1. Static typing
+2. Code completion
+3. Refactoring
+4. Shorthand notations
+
+
+/******** Drawbacks **********/
+
+1. Compilation
+2. Discipline in coding
