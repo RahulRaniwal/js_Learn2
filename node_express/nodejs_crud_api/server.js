@@ -26,10 +26,10 @@ const server = http.createServer((req, res) => {
     default:
       res.statusCode = 404;
       res.setHeader("Content-Type", "application/json");
-      res.write(
+      res.end(
         JSON.stringify({ title: "Not Found", message: "Route not found" })
       );
-      res.end();
+      break;
   }
 });
 
