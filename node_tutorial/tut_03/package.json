@@ -1,0 +1,16 @@
+{
+  "name": "tut_03",
+  "version": "1.0.0",
+  "description": "Learning node and express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raniwal",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "uuid": "^10.0.0"
+  }
+}

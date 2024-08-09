@@ -1,0 +1,36 @@
+About Me
+
+Name: Rahul Raniwal
+
+Introduction:
+- Software engineer currently working at bterai.
+- Also an artist and loves to play cricket.
+- Proficient in React and Next.js.
+- B.Tech graduate from NSUT Delhi.
+
+Contact Information:
+- Email: [your email]
+- LinkedIn: [your LinkedIn profile]
+- GitHub: [your GitHub profile]
+
+Skills:
+- Programming Languages: JavaScript, TypeScript, Python
+- Frontend: React, Next.js, Ant Design
+- Tools & Platforms: Git, Webpack, Docker
+- Others: Redux, Tailwind CSS, RESTful APIs
+
+Hobbies:
+- Cricket
+- Painting
+- Traveling
+
+Experience:
+1. Software Engineer at bterai
+   - Working on frontend development using React and Next.js
+   - Implementing UI components and improving user experience
+
+2. Previous Experience (if any)
+   - [Details of any previous jobs or projects]
+
+Education:
+- B.Tech in [your major] from NSUT Delhi
