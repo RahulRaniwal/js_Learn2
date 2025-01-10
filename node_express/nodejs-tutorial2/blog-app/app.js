@@ -1,3 +1,4 @@
+const dotenv = require("dotenv");
 const path = require("path");
 const express = require("express");
 const cookieParser = require("cookie-parser");
@@ -7,12 +8,13 @@ const { connectToMongoDB } = require("./connect.js");
 const { authenticate } = require("./middlewares/authentication.middleware.js");
 const Blog = require("./models/blog.model.js");
 
+dotenv.config();
 const app = express();
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // mongodb connection function
-connectToMongoDB("mongodb://127.0.0.1:27017/blog-db").then(() => {
+connectToMongoDB(process.env.MONGO_URL).then(() => {
   console.log("Conected to MongoDB");
 });
 
