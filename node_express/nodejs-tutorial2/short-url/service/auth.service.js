@@ -4,8 +4,9 @@ const secretKey = "Rahul!2345!@#$%"
 // set user
 function setUser(user){
   const payload = {
-    _id: user.id,
-    email: user.email
+    _id: user._id,
+    email: user.email,
+    role: user.role,
   }
   return jwt.sign(payload , secretKey);
 }
@@ -16,11 +17,11 @@ function getUser(token){
   }
   try {
     // Only verify the token, don't return the decoded payload
-    jwt.verify(token, secretKey);
-    return true; // Token is valid
+    const payload = jwt.verify(token, secretKey);
+    return payload; // Token is valid
   } catch (err) {
     console.error("Token verification failed:", err.message); // Log the error
-    return false; // Token is invalid
+    return null; // Token is invalid
   }
 }
 

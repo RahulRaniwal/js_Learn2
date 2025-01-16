@@ -6,7 +6,7 @@ async function createUser(req , res){
   const {name , email , password} = req.body;
   await User.create({name, email , password});
 
-  return res.render('/');
+  return res.redirect('/');
 }
 
 async function userLogin(req, res) {
@@ -16,11 +16,11 @@ async function userLogin(req, res) {
   // check if user exist
   if(!user){
     return res.render("login", {
-      error: "Invalid username or password",
+      error: "Invalid credentials",
     });
   }
   const token = setUser(user);
-  res.cookie("uid" , token);
+  res.cookie("token" , token);
   return res.redirect("/");
 }
 
