@@ -52,7 +52,7 @@ function proceedToPayment(orderId) {
 function showOrderSummary(orderStatus) {
   return new Promise(function (resolve, reject) {
     if (orderStatus.paymentStatus === 1) {
-      resolve({ status: "success", order: carrt });
+      resolve({ status: "success", order: cart });
     } else {
       reject(new Error("Something went wrong"));
     }
